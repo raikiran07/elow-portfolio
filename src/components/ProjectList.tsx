@@ -30,7 +30,7 @@ export default function ProjectList() {
                 <div className='flex items-center justify-start gap-2 flex-wrap animate-blur'>
                 {
                   project.tech.map(item=>(
-                    <p className='bg-blue-400 p-1 rounded-md text-white'>{item.name}</p>
+                    <p className='bg-blue-400 p-1 rounded-md text-white' key={item.id}>{item.name}</p>
                   ))
                 }
                 </div>

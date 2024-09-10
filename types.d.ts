@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image"
 
 type Language = {
+    id:number
     name:string
 }
 
