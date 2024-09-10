@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image";
-import { TabsDemo } from "@/components/Tabs";
+
 import { AccordionDemo } from "@/components/Accordian";
-import { CarouselDemo } from "@/components/Carousel";
+
 import Hero from "@/components/Hero";
 import Resume from "@/components/Resume";
 import { useContext } from "react";
