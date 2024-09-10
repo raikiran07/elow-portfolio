@@ -15,7 +15,7 @@ const fontSans = FontSans({
 })
  
 export const metadata: Metadata = {
-  title: "shadcn",
+  title: "Elow Piku",
   description: "Created by Kiran Rai",
 };
 
