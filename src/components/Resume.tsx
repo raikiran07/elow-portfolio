@@ -47,7 +47,7 @@ export default function Resume() {
             <p className='font-light  dark:text-gray-50'>Gurgaon, India</p>
             <p className='font-light dark:text-gray-50'>work on something Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, fugit?</p>
             </div>
-            <p><span className='font-semibold'>Technology used - </span>Python, Arduino board, mongodb</p>
+            <p className='text-xs md:text-base'><span className='font-semibold'>Technology used - </span>Python, Arduino board, mongodb</p>
 
             <div className="item mt-4 text-xs md:text-base">
             <div className='flex items-center justify-between'>
