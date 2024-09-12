@@ -54,6 +54,9 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      scale: {
+        '101': '1.01',
+      },
       backgroundImage: {
         foo: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
         // dark: "linear-gradient(rgba(45, 52, 64, 0.5) 0px, transparent 0),linear-gradient(90deg, rgba(45, 52, 64, 0.5) 0px, #0b0d0f 0)",
@@ -146,6 +149,7 @@ const config = {
         fadeInUp: "fadeInUp 1s ease",
         blur: "blur 1.2s ease",
         gradientBlur: "gradient 7s ease-in-out infinite, blur 1.6s ease",
+        up:"accordian-up 3s ease-in-out"
       },
       fontFamily:{
         sans: ["var(--font-sans)", ...fontFamily.sans],

@@ -8,7 +8,7 @@ export default function BlogList() {
     <div>
         {
           blogs?.map(blog=>(
-            <div key={blog.blogId} className='mt-4'>
+            <div key={blog.blogId} className='mt-4 md:border md:p-2 md:rounded-md md:hover:scale-101 md:hover:translate-y-[-2px] md:hover:border-gray-400 transition-all ease-linear'>
             {/* <BlurImage
             width={760}
             height={400}
@@ -19,21 +19,21 @@ export default function BlogList() {
             loading="eager"
              /> */}
              <Link href={`/blogs/${blog.blogId}`}>
-             <div className='flex items-center justify-between'>
-             <h1 className='animate-fadeInUp font-semibold text-xl text-blue-400 my-4'>
+             <div className='flex flex-col md:flex-row md:items-center justify-between'>
+             <h1 className='animate-fadeInUp font-semibold text-xl text-blue-400   md:my-4'>
               
                 {
                   blog.title
                 }
                 
               </h1>
-              <p className='animate-fadeInUp'>
+              <p className='animate-fadeInUp mb-4 md:mb-0 text-xs md:text-base'>
                 {`${blog.date} . ${blog.readTime} minute`}
               </p>
              </div>
              <p className='animate-fadeInUp'>
                 {
-                  blog.summary
+                  `${blog.summary}...`
                 }
               </p>
              </Link>
@@ -41,7 +41,7 @@ export default function BlogList() {
               
               
               
-                <hr className='my-8'></hr>
+                <hr className='my-8 md:hidden'></hr>
             
             </div>
           ))
