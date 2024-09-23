@@ -21,7 +21,8 @@ export default function ContactForm() {
   const {register,handleSubmit,formState:{errors}} = useForm<UserDetail>();
 
   const onSubmit : SubmitHandler<UserDetail> = (data) => {
-    console.log(data);
+    alert("thanks for your message, will contact you soon")
+    
   }
 
 

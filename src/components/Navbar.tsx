@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className='w-full  sticky top-0 z-50 dark:bg-background bg-white'>
         <div className='py-4 flex flex-row items-center justify-between  mx-auto max-w-[90%] md:max-w-[70%]  animate-fadeInUp'>
         <h1 className='font-bold'>
-            <Link href="/">Elow Piku</Link>
+            <Link href="/">Kiran Rai</Link>
         </h1>
         <div className='flex items-center justify-center gap-3 text-sm'>
            
