@@ -75,12 +75,12 @@ export default function Resume() {
         <h2 className='text-yellow-500 my-4'>Skills</h2>
         <ul>
           <li className='font-semibold'>Programming Languages - 
-            <div className="flex items-center justify-start gap-1 flex-wrap font-normal text-sm p-1">
+            <div className="flex items-center justify-start gap-1 flex-wrap font-normal text-sm py-1">
             <span>Java</span>,<span>Javascript</span>,<span>Python</span>
             </div>
           </li>
           <li className='font-semibold mt-2'>Frameworks and Tools - 
-            <div className='flex items-center justify-start gap-1 flex-wrap font-normal text-sm md:text-base p-1'>
+            <div className='flex items-center justify-start gap-1 flex-wrap font-normal text-sm py-1'>
             <span className=''>Springboot</span>,
           <span>JSP</span>,
           <span>JDBC</span>,
