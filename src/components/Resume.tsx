@@ -51,7 +51,7 @@ export default function Resume() {
             
             </div>
             <p className='font-light  dark:text-gray-50 text-sm'>Hyderabad, India</p>
-            <p className='font-light dark:text-gray-50 mt-2'>Developed backend api's using java springboot and spring hibernate, maintain and debug production pipeline</p>
+            <p className='font-light dark:text-gray-50 mt-2'>Developed backend api&apos;s using java springboot and spring hibernate, maintain and debug production pipeline</p>
             </div>
             {/* <p className='text-xs md:text-base'><span className='font-semibold'>Technology used - </span>Python, Arduino board, mongodb</p> */}
 
