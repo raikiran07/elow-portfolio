@@ -11,7 +11,9 @@ type Projects = {
     description:string,
     githubLink?:string,
     imageUrl?:StaticImageData,
-    tech?:Language[]
+    tech?:Language[],
+    liveLink?:string,
+    githubLink?:string
 
 }
 

@@ -17,7 +17,9 @@ const data:Projects[] = [
     id:3,
     description:"developed a website to record all my expenses and loans that I taken or given to someone. it helps me to organize all my expenses in one place, the backend is backed by firebase and the frontend component is build using reactjs, for alerts and other notifications , toastify is implemented.",
     title:"Udhaarbook",
-    tech:[{id:1,name:"firebase"},{id:2,name:"reactJs"},{id:3,name:"toastify"},{id:4,name:"firebase auth"}]
+    tech:[{id:1,name:"firebase"},{id:2,name:"reactJs"},{id:3,name:"toastify"},{id:4,name:"firebase auth"}],
+    liveLink:'https://udhaarbook.vercel.app/',
+    githubLink:'https://github.com/raikiran07/UdhaarBook'
 }
 ]
 
