@@ -5,13 +5,17 @@ const data:Projects[] = [
     id:1,
     description:"Job Finder is a fullstack job post website where anyone can post or apply job according to the requirement. The backend is developed using java springboot and JPA technology and the frontend component is build using reactjs framework.",
     title:"Job Finder",
-    tech:[{id:1,name:"java"},{id:2,name:"Springboot"},{id:3,name:"ReactJs"},{id:4,name:"sql"},{id:5,name:"oracle"}]
+    tech:[{id:1,name:"java"},{id:2,name:"Springboot"},{id:3,name:"ReactJs"},{id:4,name:"sql"},{id:5,name:"oracle"}],
+    githubLink:"https://github.com/raikiran07/Job-Portal-Frontend",
+    liveLink:"https://github.com/raikiran07/Job-Portal-Frontend"
 },
 {
     id:2,
     description:"developed a leave management system, which can handle both employee and manager login with a single login page, and provide personal dashboard according to the role. employee can easily make leave request according to available leave and the request is sent to the particular manager assign to the employee. Manager is allowed to accept or reject the request providing some valid reasons and the status is reflected to the employee dashboard.",
     title:"Leave Management System",
-    tech:[{id:1,name:"java"},{id:2,name:"Springboot"},{id:3,name:"ReactJs"},{id:4,name:"sql"},{id:5,name:"oracle"}]
+    tech:[{id:1,name:"java"},{id:2,name:"Springboot"},{id:3,name:"ReactJs"},{id:4,name:"sql"},{id:5,name:"oracle"}],
+    githubLink:"https://github.com/raikiran07/LMS-Frontend",
+    liveLink:"https://github.com/raikiran07/LMS-Frontend"
 },
 {
     id:3,
