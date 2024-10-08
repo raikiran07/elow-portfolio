@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className='mt-8'>
         {/* <hr className='max-w-[90%] md:max-w-[70%] mx-auto' /> */}
-        <div className='max-w-[90%] md:max-w-[50%] mx-auto flex items-center justify-between py-6'>
+        <div className='max-w-[90%] md:max-w-[70%] mx-auto flex items-center justify-between py-6'>
         <div className="socials flex items-center justify-start gap-2 text-xl text-blue-400">
             <Link href="https://github.com/raikiran07" target='_blank'>
             <FaGithub />

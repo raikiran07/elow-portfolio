@@ -12,7 +12,7 @@ export default function Home() {
  
   // const {setActiveRoute} = useContext(useNavContext);
   return (
-    <main className="min-h-screen w-full">
+    <main className="min-h-screen w-full overflow-x-hidden">
 
       <Hero/>
       {/* <Resume/> */}

@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function Navbar() {
   return (
     <nav className='w-full  sticky top-0 z-50 dark:bg-background bg-white'>
-        <div className='py-4 flex flex-row items-center justify-between  mx-auto max-w-[90%] md:max-w-[50%]  animate-fadeInUp'>
+        <div className='py-4 flex flex-row items-center justify-between  mx-auto max-w-[90%] md:max-w-[70%]  animate-fadeInUp'>
         <h1 className='font-bold'>
             <Link href="/">Kiran Rai</Link>
         </h1>
@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
         <ModeToggle />
         </div>
-        <hr className='max-w-[90%] md:max-w-[50%] mx-auto' />
+        <hr className='max-w-[90%] md:max-w-[70%] mx-auto' />
     </nav>
   )
 }
