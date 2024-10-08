@@ -67,6 +67,14 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "scroll":{
+          from:{
+            transform:"translateX(0)",
+          },
+          to:{
+            transform:"translateX(-100%)",
+          }
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -139,6 +147,18 @@ const config = {
             "background-position": "0% 50%",
           },
         },
+        opacityzeroToOne:{
+          from:{
+            opacity:"0",
+          },
+          to:{
+            opacity:"1"
+          }
+        },
+        scrollHorizontal: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
         
       },
       animation: {
@@ -149,7 +169,11 @@ const config = {
         fadeInUp: "fadeInUp 1s ease",
         blur: "blur 1.2s ease",
         gradientBlur: "gradient 7s ease-in-out infinite, blur 1.6s ease",
-        up:"accordian-up 3s ease-in-out"
+        up:"accordian-up 3s ease-in-out",
+        scrollInfinite:"scroll 30s linear infinite",
+        animateTitle:"opcityzeroToOne 2s ease-in-out",
+        scrollHorizontal: 'scrollHorizontal 5s linear infinite',
+        pause:'none'
       },
       fontFamily:{
         sans: ["var(--font-sans)", ...fontFamily.sans],

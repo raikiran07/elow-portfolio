@@ -27,7 +27,7 @@ export default function ContactForm() {
 
 
   return (
-    <div className='max-w-[90%] md:max-w-[70%] mx-auto mt-8'>
+    <div className='max-w-[90%] md:max-w-[50%] mx-auto mt-8'>
         <h1 className='text-3xl font-bold'>Contact me</h1>
         <p className='animate-fadeInUp'>For any projects, or any other queries please contact here.</p>
 
