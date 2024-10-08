@@ -14,13 +14,13 @@ export default function Navbar() {
         </h1>
         <div className='flex items-center justify-center gap-3 text-sm'>
            
-            <p>
+            <p className='hover:before:content-[""] hover:before:w-[110%] hover:before:h-[3px] hover:before:absolute hover:before:left-[-5%] hover:before:bg-blue-400 hover:before:bottom-2 relative cursor-pointer'>
                 <Link href="/projects">Projects</Link>
             </p>
-            <p>
+            <p className='hover:before:content-[""] hover:before:w-[110%] hover:before:h-[3px] hover:before:absolute hover:before:left-[-5%] hover:before:bg-blue-400 hover:before:bottom-2 relative cursor-pointer'>
                 <Link href="/contact">Contact</Link>
             </p>
-            <p>
+            <p className='hover:before:content-[""] hover:before:w-[110%] hover:before:h-[3px] hover:before:absolute hover:before:left-[-5%] hover:before:bg-blue-400 hover:before:bottom-2 relative cursor-pointer'>
                 <Link href="/blogs">Blogs</Link>
             </p>
         </div>

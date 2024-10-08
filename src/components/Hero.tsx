@@ -52,7 +52,7 @@ export default function Hero() {
             opacity:0,
             rotate:360,
             duration:0.7,
-            borderRadius:'20px',
+            borderRadius:'50%',
             stagger:0.5,
             
         })
