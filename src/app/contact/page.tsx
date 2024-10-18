@@ -28,8 +28,8 @@ export default function ContactForm() {
 
   return (
     <div className='max-w-[90%] md:max-w-[60%] mx-auto mt-8 font-extralight text-sm'>
-        <h1 className='text-3xl font-bold md:text-center'>Contact me</h1>
-        <p className='animate-fadeInUp text-xs md:text-center'>For any projects, or any other queries please contact here.</p>
+        <h1 className='text-3xl font-bold text-center'>Contact me</h1>
+        <p className='animate-fadeInUp text-xs text-center'>For any projects, or any other queries please contact here.</p>
 
         <form onSubmit={handleSubmit(onSubmit)} className='mt-6'>
         <div className='mt-2'>
