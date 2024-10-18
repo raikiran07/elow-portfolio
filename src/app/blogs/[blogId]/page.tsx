@@ -15,7 +15,7 @@ export default function Blog({params}:{params:{
     
 
   return (
-    <div  className='mt-8 max-w-[90%] md:max-w-[50%] mx-auto'>
+    <div  className='mt-8 max-w-[90%] md:max-w-[60%] mx-auto'>
            <BlurImage
             width={700}
             height={400}

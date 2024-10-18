@@ -1,3 +1,4 @@
+import { Poppins } from 'next/font/google';
 import type { Config } from "tailwindcss"
 const { fontFamily } = require("tailwindcss/defaultTheme")
 
@@ -176,7 +177,8 @@ const config = {
         pause:'none'
       },
       fontFamily:{
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["var(--font-inter)", ...fontFamily.sans],
+        // poppin:["var(--font-poppin",'sans-serif']
       },
     },
   },

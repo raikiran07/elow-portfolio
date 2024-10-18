@@ -10,12 +10,19 @@ import { ScrollTrigger } from 'gsap/all';
 import Carousel from './Carousal';
 import { Button } from './ui/button';
 import Profile from '../../public/images/profile.png'
+import Fly from '../../public/images/fly.png'
+import { useRef } from 'react';
+
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger)
 
 
+
+
 export default function Hero() {
+
+    const cursorRef = useRef(null)
 
     useGSAP(()=>{
 
@@ -85,34 +92,45 @@ export default function Hero() {
 
     },{})
 
+    // const handleCursor = (dets) => {
+    //     useGSAP(()=>{
+    //         gsap.to(cursorRef.current,{
+    //             x:dets.clientX,
+    //             y:dets.clientY,
+    //             duration:1
+    //            })
+    //     },[dets])
+      
+    // }
+
 
   return (
-    <div className='max-w-[90%] md:max-w-[70%] mx-auto'>
+    <div className='max-w-[90%] md:max-w-[60%] mx-auto' id="container">
         
 
         <div className="profile-image z-10 min-h-[80vh]">
-            <div className="image-container flex flex-col-reverse md:flex-row items-center justify-between md:mt-10">
+            <div className="image-container flex flex-col-reverse md:flex-row md:items-center justify-between md:mt-14">
             <div>
                  {/* </div> */}
-            <h1 id="author" className='text-4xl md:text-6xl lg:text-8xl text-left  font-bold mt-8 bg-foo  text-transparent bg-clip-text md:leading-[4rem] lg:leading-[6rem]'><span className='text-4xl md:text-6xl'>Hi, I am</span> <br></br> Kiran Rai</h1>
+            <h1 id="author" className='text-8xl md:text-6xl lg:text-8xl text-left  font-bold mt-8 bg-foo  text-transparent bg-clip-text md:leading-[4rem] lg:leading-[6rem]'><span className='text-6xl md:text-6xl'>Hi, I am</span> <br></br> Kiran Rai</h1>
             <div className="content my-6" id="header-content">
                 
-                <h1 className=''>I am a dedicated software developer with 1 year of experience in developing and optimizing software applications using java and
+                <h1 className='max-w-[90%] font-extralight font-sans md:max-w-[100%]'>I am a dedicated software developer with 1 year of experience in developing and optimizing software applications using java and
                 javascript. I am passionate about learning new technologies and am eager to contribute to innovative projects in a collaborative team
                 environment.</h1>
             </div>
             <div className="social-container flex flex-row items-center gap-3 my-4">
-            <div className="social-item border border-white w-10 h-10 bg-blue-400 dark:bg-slate-100 flex items-center justify-center">
+            <div className="social-item border border-white w-10 h-10 bg-blue-400 dark:bg-slate-100 flex items-center justify-center rounded-[15%]">
                 <Link href="https://www.linkedin.com/in/kiran-rai-50b836196/" target="_blank">
                 <FaLinkedin className='dark:text-blue-400 text-white text-xl' />
                 </Link>
             </div>
-            <div className="social-item border border-white w-10 h-10 bg-blue-400 dark:bg-slate-100  flex items-center justify-center">
+            <div className="social-item border border-white w-10 h-10 bg-blue-400 dark:bg-slate-100  flex items-center justify-center rounded-[15%]">
                 <Link href="https://github.com/raikiran07" target='_blank'>
                 <FaGithub className='dark:text-blue-400 text-white text-xl'/>
                 </Link>
             </div>
-            <div className="social-item border border-white w-10 h-10 bg-blue-400 dark:bg-slate-100 flex items-center justify-center">
+            <div className="social-item border border-white w-10 h-10 bg-blue-400 dark:bg-slate-100 flex items-center justify-center rounded-[15%]">
                 <Link href="https://twitter.com/KiranRai425?t=8JsQw4HRZAgNmVMi1EgJpQ&s=09" target="_blank">
                 <FaTwitter className='dark:text-blue-400 text-white text-xl'/>
                 </Link>
@@ -120,7 +138,7 @@ export default function Hero() {
         </div>
             </div>
            
-            <Image src={Profile} alt='author image' className='mt-10 ml-4 rounded-md author-image max-w-full md:max-w-[350px]'></Image>
+            <Image src={Profile} alt='author image' className='mt-[7rem] md:mt-10 md:ml-4 max-w-[200px] max-h-[200px] rounded-full md:rounded-md author-image  md:max-w-[450px] md:max-h-[400px]'></Image>
             </div>
            
             
@@ -130,7 +148,7 @@ export default function Hero() {
        
         <hr className='my-8 w-0 education'></hr>
 
-        <h1 className='frontline font-bold text-3xl resume-header education'>
+        <h1 className={`frontline font-bold text-3xl resume-header education`}>
             Resume
         </h1>
         <section className="education">
@@ -203,11 +221,11 @@ export default function Hero() {
         </section>
 
       <Link href="https://drive.google.com/file/d/153kVu3NvCTBT73uNbG_G_BHzQDecbKTq/view?usp=drive_link" target="_blank">
-      <Button className='my-6'>Download Resume</Button>
+      <Button className='my-8'>Download Resume</Button>
       </Link>
         
 
-        
+       {/* <Image src={Fly} alt="fly image" width={30} ref={cursorRef}></Image> */}
        
 
     </div>
