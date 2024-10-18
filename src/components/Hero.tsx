@@ -112,7 +112,7 @@ export default function Hero() {
             <div className="image-container flex flex-col-reverse md:flex-row md:items-center justify-between md:mt-14">
             <div>
                  {/* </div> */}
-            <h1 id="author" className='text-8xl md:text-6xl lg:text-8xl text-left  font-bold mt-8 bg-foo  text-transparent bg-clip-text md:leading-[4rem] lg:leading-[6rem]'><span className='text-6xl md:text-6xl'>Hi, I am</span> <br></br> Kiran Rai</h1>
+            <h1 id="author" className='text-6xl md:text-6xl lg:text-8xl text-left  font-bold mt-8 bg-foo  text-transparent bg-clip-text md:leading-[4rem] lg:leading-[6rem]'><span className='text-4xl md:text-6xl'>Hi, I am</span> <br></br> Kiran Rai</h1>
             <div className="content my-6" id="header-content">
                 
                 <h1 className='max-w-[90%] font-extralight font-sans md:max-w-[100%]'>I am a dedicated software developer with 1 year of experience in developing and optimizing software applications using java and
@@ -138,7 +138,7 @@ export default function Hero() {
         </div>
             </div>
            
-            <Image src={Profile} alt='author image' className='mt-[7rem] md:mt-10 md:ml-4 max-w-[200px] max-h-[200px] rounded-full md:rounded-md author-image  md:max-w-[450px] md:max-h-[400px]'></Image>
+            <Image src={Profile} alt='author image' className='mt-[3rem] md:mt-10 md:ml-4 max-w-[200px] max-h-[200px] rounded-full md:rounded-md author-image  md:max-w-[450px] md:max-h-[400px]'></Image>
             </div>
            
             
@@ -151,15 +151,15 @@ export default function Hero() {
         <h1 className={`frontline font-bold text-3xl resume-header education`}>
             Resume
         </h1>
-        <section className="education">
+        <section className="education font-extralight">
             <h2 className='text-blue-400 my-4'>Education Qualification</h2>
-            <div className="item text-xs md:text-base">
+            <div className="item text-xs md:text-base font-extralight">
             <div className='flex items-center justify-between'>
             <p className='font-semibold'>B.Tech in Computer Science and Engineering</p>
             <p className='text-sm'>2019-23</p>
             
             </div>
-            <p className='font-light  dark:text-gray-50'>Kaziranga University, Jorhat</p>
+            <p className='dark:text-gray-50'>Kaziranga University, Jorhat</p>
             <p className='font-light dark:text-gray-50'>CGPA - <span className='font-bold'>8.0 / 10</span></p>
             </div>
 
@@ -169,7 +169,7 @@ export default function Hero() {
             <p className='text-sm'>2017-19</p>
             
             </div>
-            <p className='font-light  dark:text-gray-50'>JNV, Longding Arunachal Pradesh</p>
+            <p className=' dark:text-gray-50'>JNV, Longding Arunachal Pradesh</p>
             <p className='font-light dark:text-gray-50'>Percentage - <span className='font-bold'>74%</span></p>
             </div>
 
@@ -180,20 +180,20 @@ export default function Hero() {
 
         <hr className='mt-5 hr education' id="second-hr"></hr>
 
-        <section className='experience education'>
+        <section className='experience education font-extralight'>
         <h2 className='text-blue-400 my-4'>Experience</h2>
         <div className="item text-xs md:text-base">
             <div className='flex items-start justify-between'>
               <div>
               <p className='font-semibold'>Member Technical </p>
-                <p className='text-sm'>ADP Private Limited</p>
+                <p className='text-sm font-light'>ADP Private Limited</p>
               </div>
            
             <p className='text-sm'>Oct 2023 - Sept 2024</p>
             
             </div>
-            <p className='font-light  dark:text-gray-50 text-sm'>Hyderabad, India</p>
-            <p className='font-light dark:text-gray-50 mt-2'>Developed backend apis using java springboot and spring hibernate, maintain and debug production pipeline</p>
+            <p className=' dark:text-gray-50 text-sm'>Hyderabad, India</p>
+            <p className='font-light dark:text-gray-50 mt-2 max-w-[70%]'>Developed backend apis using java springboot and spring hibernate, maintain and debug production pipeline</p>
             </div>
             {/* <p className='text-xs md:text-base'><span className='font-semibold'>Technology used - </span>Python, Arduino board, mongodb</p> */}
 
@@ -201,19 +201,19 @@ export default function Hero() {
             <div className='flex items-start justify-between'>
             <div>
             <p className='font-semibold'>Python Fullstack Developer</p>
-            <p className='text-sm'>TCS remote Internship</p>
+            <p className='text-sm font-light'>TCS remote Internship</p>
             </div>
             
             <p className='text-sm'>Aug 2022 - Sept 2022</p>
             
             </div>
-            <p className='font-light  dark:text-gray-50 text-sm'>Bhubaneswar, India</p>
-            <p className='font-light dark:text-gray-50 mt-2 education'>accessive training in django and flask frameworks and building projects to implement the learnings.</p>
+            <p className='  dark:text-gray-50 text-sm'>Bhubaneswar, India</p>
+            <p className='font-light dark:text-gray-50 mt-2 education max-w-[70%]'>accessive training in django and flask frameworks and building projects to implement the learnings.</p>
             </div>
 
         </section>
 
-        <section className='achievements education'>
+        <section className='achievements education font-extralight'>
         <h2 className='text-blue-400 my-4'>Skills</h2>
        
         <Carousel/>
