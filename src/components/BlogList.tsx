@@ -8,7 +8,7 @@ export default function BlogList() {
     <div>
         {
           blogs?.map(blog=>(
-            <div key={blog.blogId} className='mt-4 md:border md:p-2 md:rounded-md md:hover:scale-101 md:hover:translate-y-[-2px] md:hover:border-gray-400 transition-all ease-linear'>
+            <div key={blog.blogId} className='mt-4 md:border md:p-2 md:rounded-md md:hover:scale-101 md:hover:translate-y-[-2px] md:hover:border-gray-400 transition-all ease-linear font-extralight'>
             {/* <BlurImage
             width={760}
             height={400}
