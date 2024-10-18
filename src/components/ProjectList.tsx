@@ -30,7 +30,7 @@ export default function ProjectList() {
     <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4'>
         {
           data?.map(project=>(
-            <div key={project.id} className='project-item mt-4 font-extralight border p-2 md:rounded-md hover:cursor-pointer hover:border-gray-500 transition-all ease-linear animate-fadeInUp'>
+            <div key={project.id} className='project-item mt-4 font-extralight border p-2 rounded-md hover:cursor-pointer hover:border-gray-500 transition-all ease-linear animate-fadeInUp text-xs md:text-sm'>
 
               <div className='title-container flex items-center justify-between  pb-1 md:mb-2'>
 
