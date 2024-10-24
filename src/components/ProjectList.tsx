@@ -54,7 +54,7 @@ export default function ProjectList() {
                </h1>
 
                {
-                project.developing && <span className='text-[10px] font-light bg-white p-[3px] rounded-md mt-2 tracking-wider text-blue-400'>Developing</span>
+                project.developing && <span className='text-[10px] font-light dark:bg-white p-[3px] rounded-md mt-2 tracking-wider dark:text-blue-400 bg-orange-200 text-orange-500 '>Developing</span>
                }
               
              
