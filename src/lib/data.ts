@@ -1,30 +1,39 @@
 import { Projects,Blogs } from '../../types'
 import BlogImage from '../../public/images/blog.jpg'
+
 const data:Projects[] = [
+
 {
     id:1,
-    description:"Job Finder is a fullstack job post website where anyone can post or apply job according to the requirement. The backend is developed using java springboot and JPA technology and the frontend component is build using reactjs framework.",
-    title:"Job Finder",
-    tech:[{id:1,name:"java"},{id:2,name:"Springboot"},{id:3,name:"ReactJs"},{id:4,name:"sql"},{id:5,name:"oracle"}],
-    githubLink:"https://github.com/raikiran07/Job-Portal-Frontend",
-    liveLink:"https://github.com/raikiran07/Job-Portal-Frontend"
+    description:"developed a job portal for the company to automate job notifications to the desired candidates directly. Implemented Nodemailer and Twilio to send instant notifications for account activation.",
+    title:"Job Notification",
+    tech:[{id:1,name:"ReactJs"},{id:2,name:"NodeJs"},{id:3,name:"TailwindCss"},{id:4,name:"MongoDB Atlas"},{id:5,name:"Nodemailer"},{id:6,name:"Twilio"}],
+    githubLink:"https://github.com/raikiran07/Job-Assignment-Frontend",
+    liveLink:"https://github.com/raikiran07/Job-Portal-Frontend",
+    video:'/video/job-web.mp4',
+    developing:true
 },
 {
     id:2,
-    description:"developed a leave management system, which can handle both employee and manager login with a single login page, and provide personal dashboard according to the role. employee can easily make leave request according to available leave and the request is sent to the particular manager assign to the employee. Manager is allowed to accept or reject the request providing some valid reasons and the status is reflected to the employee dashboard.",
-    title:"Leave Management System",
-    tech:[{id:1,name:"java"},{id:2,name:"Springboot"},{id:3,name:"ReactJs"},{id:4,name:"sql"},{id:5,name:"oracle"}],
-    githubLink:"https://github.com/raikiran07/LMS-Frontend",
-    liveLink:"https://github.com/raikiran07/LMS-Frontend"
-},
-{
-    id:3,
     description:"developed a website to record all my expenses and loans that I taken or given to someone. it helps me to organize all my expenses in one place, the backend is backed by firebase and the frontend component is build using reactjs, for alerts and other notifications , toastify is implemented.",
     title:"Udhaarbook",
     tech:[{id:1,name:"firebase"},{id:2,name:"reactJs"},{id:3,name:"toastify"},{id:4,name:"firebase auth"}],
     liveLink:'https://udhaarbook.vercel.app/',
-    githubLink:'https://github.com/raikiran07/UdhaarBook'
-}
+    githubLink:'https://github.com/raikiran07/UdhaarBook',
+    video:'/video/udhaarbook.mp4',
+    developing:false
+},
+{
+    id:3,
+    description:"Developed my personal portfolio to list all my projects, resume and works. Crafted beautifully using NextJs framework",
+    title:"Personal Portfolio",
+    tech:[{id:1,name:"NextJs"},{id:2,name:"Gsap"},{id:3,name:"ReactJs"},{id:4,name:"Custom Css"},{id:5,name:"TailwindCss"}],
+    githubLink:"https://github.com/raikiran07/elow-portfolio",
+    liveLink:"https://kiranra.tech",
+    video:'/video/portfolio.mp4',
+    developing:false
+},
+
 ]
 
 const blogs:Blogs[] = [

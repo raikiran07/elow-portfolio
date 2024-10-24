@@ -9,9 +9,12 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useGSAP } from '@gsap/react';
 
+
 gsap.registerPlugin(ScrollTrigger)
 
+
 export default function ProjectList() {
+  console.log(data)
 
   useGSAP(()=>{
     const projectTl = gsap.timeline()
@@ -30,17 +33,33 @@ export default function ProjectList() {
     <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4'>
         {
           data?.map(project=>(
-            <div key={project.id} className='project-item mt-4 font-extralight border p-2 rounded-md hover:cursor-pointer hover:border-gray-500 transition-all ease-linear animate-fadeInUp text-xs md:text-sm'>
+            <div key={project.id} className='border project-item mt-4 font-extralight p-2 rounded-md hover:cursor-pointer hover:border-gray-500 transition-all ease-linear animate-fadeInUp text-xs md:text-sm'>
+               {
+                  project.video && <video width={'100%'} className='rounded-sm' autoPlay loop>
+                    <source src={project.video}  type="video/mp4"/>
+
+                  </video>
+                }
+                  
 
               <div className='title-container flex items-center justify-between  pb-1 md:mb-2'>
+               
 
-              <h1 className='animate-fadeInUp font-semibold text-xl text-blue-400 '>
+              <div className='flex items-center justify-start gap-2'>
+              <h1 className='animate-fadeInUp font-semibold text-xl text-blue-400 mt-2'>
                
                {
                  project.title
                }
+               </h1>
+
+               {
+                project.developing && <span className='text-[10px] font-light bg-white p-[3px] rounded-md mt-2 tracking-wider text-blue-400'>Developing</span>
+               }
               
-             </h1>
+             
+              </div>
+             
              <div className="link-container flex items-center justify-start gap-2">
               <Link href={`${project.githubLink ? project.githubLink : "#"}`}>
               <FaGithub className='text-gray-500 hover:text-gray-700 transition-all ease-linear'/>

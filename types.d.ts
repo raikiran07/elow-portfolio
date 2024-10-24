@@ -13,7 +13,9 @@ type Projects = {
     imageUrl?:StaticImageData,
     tech?:Language[],
     liveLink?:string,
-    githubLink?:string
+    githubLink?:string,
+    video?:string,
+    developing?:boolean
 
 }
 
